@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>垂直图像浏览器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>垂直图像浏览器</h1>
+        </header>
+        <main>
+            <div class="controls">
+                <button id="selectFolder" class="btn">选择文件夹</button>
+                <button id="prevBtn" class="btn" disabled>上一张</button>
+                <button id="nextBtn" class="btn" disabled>下一张</button>
+                <div class="auto-play">
+                    <input type="checkbox" id="autoPlay">
+                    <label for="autoPlay">自动播放</label>
+                    <input type="number" id="interval" min="1" max="10" value="3" class="interval-input">
+                    <label for="interval">秒/张</label>
+                </div>
+                <button id="resetBtn" class="btn">重置</button>
+            </div>
+            <div class="image-container">
+                <img id="currentImage" src="" alt="选择文件夹以查看图像">
+            </div>
+            <div class="image-info">
+                <span id="imageCounter">0/0</span>
+                <span id="imageName">未选择图像</span>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2023 垂直图像浏览器 | 版本 0.5</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
